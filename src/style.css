@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* outfit-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/fonts/outfit-v15-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/outfit-v15-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@theme {
+  /* Color */
+  --color-cyan-400:hsl(178, 100%, 50%);
+
+  --color-blue-500:hsl(215, 51%, 70%);
+  --color-blue-800:hsl(215, 32%, 27%);
+  --color-blue-900:hsl(216, 50%, 16%);
+  --color-blue-950: hsl(217, 54%, 11%);
+
+  /* Font Family */
+  --font-outfit: "Outfit", sans-serif;
+
+}
+
+/* Text Preset 1 - Outfit SemiBold - 22px */
+@utility outfit-tp1 {
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  font-size: 1.375rem; /* 22px */
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 2 - Outfit Light - 18px */
+@utility outfit-tp2 {
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 1.125rem; /* 18px */
+  line-height: 145%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 3 (SemiBold) - 16px */
+@utility outfit-tp3-semibold {
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  font-size: 1rem; /* 16px */
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 3 (Light) - 16px */
+@utility outfit-tp3-light {
+  font-family: var(--font-outfit);
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+  line-height: 125%;
+  letter-spacing: 0px;
+}
